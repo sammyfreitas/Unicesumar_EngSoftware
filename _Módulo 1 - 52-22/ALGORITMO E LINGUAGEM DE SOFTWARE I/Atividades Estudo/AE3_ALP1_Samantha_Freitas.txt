@@ -1,0 +1,27 @@
+Algoritmo Separação_Gado
+	var N, i, contpar, contimpar: inteiro 
+	vetpar [42] de inteiro
+	vetimpar [42] de inteiro
+Início
+	contpar = 0
+	contimpar = 0
+	Para i de 1 ate 42 passo 1 faça
+		Escreva ("Digite o número do Gado")
+		Leia (N)
+			se (Mod(N/2) = 0) então
+				vetpar [contpar] <- N
+				contpar <- contpar + 1
+			senao
+				vetimpar [contimpar] <- N
+				contimpar <- contimpar + 1
+			fimse
+	fimpara
+	Escreval ("O pasto 1 deverá receber os seguintes gados")
+	Para i de 1 ate 42 passo 1 faça
+		Escreval (vetpar[i])
+	FimPara
+	Escreval ("O pasto 2 deverá receber os seguintes gados")
+	Para i de 1 ate 42 passo 1 faça
+		Escreval (vetimpar[i])
+	FimPara
+Fim

@@ -1,0 +1,29 @@
+Algoritmo NotasAluno
+Var
+	notasAlunos: Vetor [1..10,1..4]
+	i, j : inteiro
+
+Início
+	Escreva ("Bem vindo ao Algoritmo de Notas do Aluno")
+	Para  de 1 até 10 faça
+		Escreva("Aluno número ",i)
+		Para j de 1 até 4 faça
+			Escreva ("Digite a nota da prova ",j, "do aluno", i)
+			Leia notasAlunos[i,j])
+		FimPara
+	FimPara
+	soma <- 0.0
+	media <- 0.0
+	Para id de 1 até 10 faça
+		soma <- 0.0
+		media <- 0.0
+		Para j de 1 até 4 faça
+			soma <-soma + notasAlunos[i,j]
+		FimPara
+			media <- soma/4
+			Escreva ("A média do aluno ", i, "é", media)
+	FimPara
+Fim
+	
+	
+		

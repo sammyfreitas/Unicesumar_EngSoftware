@@ -1,0 +1,53 @@
+Algoritmo Controle de Abastecimento de Aeronaves
+Var 
+	lit_km, cap_tanque, qtd_comb, km_tplan, km_talt, trecho_total, total_comb: real
+	n_rota : vetor[1..80] de caractere 
+
+Início 
+
+	/* Leitura de Dados */
+	Escreval("Digite o nome da Rota") 
+	Leia (n_rota) 	
+	Escreval("Digite a média de consumo de litros/Km") 
+	Leia (lit_km) 
+	Escreval ("Digite a capacidade do tanque de combustível do tanque")
+	Leia (cap_tanque)
+	Escreval ("Digite a quantidade de combustível no tanque da aeronave")
+	Leia (qtd_comb)
+	Escreval ("Digite a quantidade de Km do Trecho Planejado") 
+	Leia (km_tplan) 
+	Escreva ("Digite a quantidade de Km do Trecho Alternativo") 
+	Leia (km_talt) 
+	
+	/* Cálculo dos Trechos */
+	trecho_total <- km_tplan + km_talt
+	
+	/* Cálculo da margem de segurança */
+	trecho_total <- trecho_total * 0,3
+	
+	/* Cálculo da quantidade de combustível necessária*/
+	total_comb <- lit_km * trecho_total
+	
+	/* Mostrando Resultados */	
+	Escreval ("Olá, seja bem vindo ao Controle de Vôos")
+	Escreval ("Seguem os dados de sua rota: " , n_rota )
+	Escreval ("A Km do Trecho Planejado é: " , km_tplan)
+	Escreval ("A Km do Trecho Alternativo é: " , km_talt)
+	Escreval ("A Km do trecho total com margem de segurança é: " , trecho_total)
+	Escreval ("A capacidade do tanque é: " , cap_tanque)
+	Escreval ("A quantidade de combustível no tanque é: " , qtd_comb)
+	
+	/* Validando Combustível da Aeronave */	
+	Se total_comb = cap_tanque então
+		Escreval ("Não será necessário abastecer, há combustível o suficiente para o vôo.")
+		Escreval ("Vôo Aprovado. Bom Vôo")
+		Se total_comb < cap_tanque então
+			val_abast <- cap_tanque - total_comb
+			Escreval ("Será necessário abastecer: " , val_abast, "litros de combustível para que o vôo seja aprovado")
+			Senão
+				total_comb <- total_comb - cap_tanque
+				Escreval ("A quantidade de combustível é superior à capacidade do tanque.")
+				Escreval ("Vôo Reprovado, reveja seu planejamento.")
+		FimSe
+	FimSe
+Fim

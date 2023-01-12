@@ -1,0 +1,42 @@
+Inicio
+    variavel inteiro N
+	variavel inteiro contador
+	variavel inteiro numapt
+	variavel inteiro aptmaiorconsumo
+	variavel real litros
+	variavel real maiorvalor
+	variavel real M3
+	
+    escrever "Quantos apartamentos tem o prédio?"
+    ler N
+	se N < 0;
+		escrever: "Número de Apartamento Inválido"
+	senão
+		para contador de 1 ate N faça
+			se contador < N;
+				escrever "Digite o número do Apartamento"
+				ler numapt
+				se numapt < 0; 
+					escrever "Número de Apartamento Inválido"
+				senão
+					escrever "Digite o número do Apartamento"
+					ler numapt
+					escrever: "Digite quantos litros de água foram consumidos por este apartamento:"
+					ler litros;
+					se litros < 0;
+							escrever "O valor de Consumo de água é inválido"
+					senão
+						escrever "Digite quantos litros de água foram consumidos por este apartamento:"
+						ler litros
+					fim se;
+				fim se;
+				se maiorvalor < litros;
+					maiorvalor <- litros;
+					aptmaiorconsumo <- numapt;
+				fimse
+			contador <- contador + 1;
+		próximo
+		M3 <- maiorvalor/1000;
+		escrever "\nO apartamento com maior consumo de água é o(" , aptmaiorconsumo , ") \te o consumo de água é ", (M3) \tmetros cúbicos
+	fimse
+fim

@@ -1,0 +1,21 @@
+Algoritmo Consumo de Água
+    var N, i, numapt, aptmaiorconsumo: inteiro 
+	var litros, maiorvalor, M3: real
+Início
+    Escreva ("Quantos apartamentos tem o prédio?")
+    Leia (N)
+	Para i de 1 ate N passo 1 faça
+		Escreva ("Digite o número do Apartamento")
+		Leia numapt
+		Escreva ("Digite quantos litros de água foram consumidos por este apartamento:")
+		Leia litros
+		Se maiorvalor < litros então
+			maiorvalor <- litros
+			aptmaiorconsumo <- numapt
+		fim_se
+	fim_para
+		M3 <- maiorvalor/1000
+		Escreva ("O apartamento com maior consumo de água é o:" , aptmaiorconsumo)
+		Escreva ("O consumo de água é", M3 ,"metros cúbicos")
+Fim
+
