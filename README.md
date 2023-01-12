@@ -2,73 +2,85 @@
 Unicesumar
 
 ## Disciplinas Cursadas
+Abaixo a lista de disciplinas cursadas e a cursar de acordo com a grade
+
 
 ### Módulo 1 (52/22)
 * Algoritmo e Linguagem de Programação I
 * Algoritmo e Linguagem de Programação II
 
-### Módulo 1I (53/22)
+
+### Módulo II (53/22)
 * Estatística
 * Engenharia de Software
 * Go - Projeto de Vida
 
-### Módulo 1II (54/22)
+
+### Módulo III (54/22)
 * Análise e Projeto orientado a Objetos
 * Engenharia de Requisitos
+
 
 ### Módulo 1V (51/23)
 * Administração de Conflitos e Relacionamentos
 * Fundamentos e Arquitetura de Computadores
 
+
 ### Módulo V 
 * Estrutura de Dados I
 * Estrutura de Dados II
+
 
 ### Módulo VI
 * Paradigmas de Linguagens de Programação
 * Projeto, Implementação e Teste de Software
 
+
 ### Módulo VII
 * Cálculo Integral e Diferencial
 * Sistemas Operacionais
+
 
 ### Módulo VIII (51/24)
 * Lógica para Computação
 * Modelagem de Software
 
+
 ### Módulo IX
 * Banco de Dados I
 * Banco de Dados II
 
-### Módulo X
-* Gerenciamento de Software
-* Tópicos em Computação I
 
 ### Módulo X
 * Gerenciamento de Software
 * Tópicos em Computação I
 
-## Módulo XI (51/25)
+
+### Módulo XI (51/25)
 * Programação de Sistemas I
 * Programação de Sistemas II
 
-## Módulo XII 
+### Módulo XII 
 *  Pesquisa Operacional
 *  Qualidade de Software
 
-## Módulo XIII
+
+### Módulo XIII
 *  Empreendedorismo
 * Tópicos em Computação II
 
-## Módulo XIV 
+
+### Módulo XIV 
 *  Fundamentos de Redes de Computadores
 *  Gestão de Projetos
 
-## Módulo XV (51/26)
+
+### Módulo XV (51/26)
 *  Segurança e Auditoria de Sistemas
 *  Tópicos Especiais em Engenharia de Software II
 
-## Módulo XVI
+
+### Módulo XVI
 *  Design e Interação
 *  Tópicos Especiais em Engenharia de Software I
 
