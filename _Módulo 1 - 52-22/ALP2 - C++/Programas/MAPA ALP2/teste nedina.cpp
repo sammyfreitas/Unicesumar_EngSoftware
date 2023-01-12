@@ -1,0 +1,17 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	
+	char x = 'hi';
+	char y = 'hi';
+	if(x==y)
+	{
+ 		printf("sao iguais");
+	}
+	else{
+ 	printf("sao diferentes");
+	}
+	return 0;
+}

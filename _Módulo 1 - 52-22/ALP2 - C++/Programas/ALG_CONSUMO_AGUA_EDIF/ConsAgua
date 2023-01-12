@@ -1,0 +1,28 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+#define pi 3.14
+
+int main(int argc, char** argv) {
+	printf("Ola Sammy!");
+	
+	int idade;
+	float soma;
+	double valorAluguel;
+	
+	idade = 36;
+	valorAluguel = 1000.50;
+	
+	soma = 10 + 5;
+	
+	double nota1=7.0;
+	double nota2=7.0;
+	double total = nota1+ nota2;
+	
+	printf ;total;
+/*idade > 18? = verdadeiro ou falso?*/
+	
+	printf("A soma e:");soma;
+	scanf ("Digite o valor");
+	return 0;
+}
