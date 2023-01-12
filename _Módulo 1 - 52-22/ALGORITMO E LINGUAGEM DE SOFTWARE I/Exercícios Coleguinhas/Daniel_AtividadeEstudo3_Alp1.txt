@@ -1,0 +1,27 @@
+Algoritmo Pasto_Par&Impar
+	var gado, i, par, impar: inteiro 
+	vetPasto1 [42] de inteiro
+	vetPasto2 [42] de inteiro
+Início
+	contpar = 0
+	contimpar = 0
+	Para i de 1 ate 42 passo 1 faça
+		Escreva ("digite o numero do gado")
+		Leia (gado)
+			se (Mod(gado/2) = 0) então
+				vetPasto1 [par] <- gado
+				par<-par++
+			senao
+				vetPasto2 [impar] <- N
+				impar<-impar ++
+			fimse
+	fimpara
+	Escreval ("Pasto 1:")
+	Para i de 1 ate 42 passo 1 faça
+		Escreval (vetPasto1[i])
+	FimPara
+	Escreval ("Pasto 2:")
+	Para i de 1 ate 42 passo 1 faça
+		Escreval (vetPasto2[i])
+	FimPara
+Fim

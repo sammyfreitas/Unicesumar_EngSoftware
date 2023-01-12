@@ -1,0 +1,32 @@
+algoritmo vacariadochibil
+	var 
+	i, par, impar, qntd: inteiro 
+	vetpar [1..42] de inteiro
+	vetimpar [1..42] de inteiro
+
+inicio
+	par = 0
+	impar = 0
+	para i de 1 ate 42 passo 1 faca 
+		escreva ("qual número do gado")
+		leia (qntd)
+		se qntd mod 2 = 0 entao 
+			vetpar [par] <- qntd
+			par = par+1
+		senao 
+			vetimpar [impar] <- qntd
+			impar = impar+1
+		fimse
+	fimpara
+	escreval ("Vacaria do Chibil")
+	escreval ("Pasto 1 - Gado Par: ")
+	para i de 1 ate 42 passo 1 faca
+		escreva (vetpar[i] ",")
+	fimpara
+	escreval ("Pasto 2 - Gado Impar: ")
+	para i de 1 ate 42 passo 1 faca
+		escreva (vetimpar[i] ",")
+	fimpara
+fimalgoritmo
+
+

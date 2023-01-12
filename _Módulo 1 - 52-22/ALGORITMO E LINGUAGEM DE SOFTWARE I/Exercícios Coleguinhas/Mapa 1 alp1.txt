@@ -1,0 +1,48 @@
+Algoritmo abastecimentoNaveChibil
+Var 
+	DT, CT, CompleteT,capacidadeT : real
+    
+	Funcao DistanciaT (distancia, distanciaA : real): real
+		Var
+			DT : real
+    InicioFuncao
+		Escreva ("qual a distancia do trecho principal")
+		Leia distancia
+		Escreva ("qual a distancia do trecho alternativo")
+		Leia distanciaA
+		DT <- (distancia + distanciaA) * 1.3 
+		retorne DT
+    FimFuncao
+    
+	Funcao comsumoT (media : real): real
+    Var 
+		CT : real
+    InicioFuncao
+		Escreva ("qual a media de litros por quilometro")
+		Leia media
+		CT <- media * DT
+		retorne CT
+    FimFuncao
+    
+	Funcao tanqueDaNave (capacidadeT, combustivelE : real) : real
+     Var
+		completeT : real
+    InicioFuncao
+		Escreva ("qual a capacidade total do tanque em litros")
+		Leia  capacidadeT
+		Escreva ("quantos litros tem no tanque")
+		Leia  combustivelE
+		completeT <- capacidadeT - combustivelE
+		retorne completeT
+		retorne capacidadeT
+    FimFuncao
+
+Início
+    Se (CT <= capacidadeT e DT <= CT) entao
+		Escreva ("vôo aprovado")
+    SeNao
+		Se (CT > capacidadeT ou DT > CT) entao
+			Escreva ("vôo reprovado")
+		Fimse
+    Fimse
+Fim

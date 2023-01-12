@@ -1,0 +1,32 @@
+algoritmo abastecimentodanavechibil
+		Funcao DistanciaTotal
+		  var km_principal, km_alternativo, media, combustivel_e, cap_tanque, cap_resta,  km_total, consumo_total : real  
+		Inicio
+			km_total <- (km_principal + km_alternativo) * 1.3 
+			retorne km_total
+			consumo_total <- media * km_total
+			retorne consumo_total
+			cap_resta <- cap_tanque - combustivel_e
+			retorne cap_resta
+		Fim_funcao
+	var km_principal, km_alternativo, media, combustivel_e, cap_tanque, cap_resta,  km_total, consumo_total : real
+
+inicio
+      Escreva ("media da aeronave em L/km")
+      Leia (media)
+      Escreva ("capacidade maxima em litros do tanque")
+      Leia (cap_tanque)
+      Escreva ("quantidade de quilometros do trecho principal")
+      Leia (km_principal)
+      Escreva ("quantidade de quilometros do trecho alternativo")
+      Leia (km_alternativo)
+      Escreva ("quantidade de combustivel ja na aeronave")
+      Leia (combustivel_e)
+      Se (consumo_total <= cap_tanque e km_total <= consumo_total) entao
+      	Escreva ("voo aprovado")
+      Senao
+      	Se (consumo_total > cap_tanque ou km_total > consumo_total ) entao
+      		Escreva ("voo reprovado")
+        Senao
+      Fimse
+fimalgoritmo
