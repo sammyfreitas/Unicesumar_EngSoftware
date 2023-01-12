@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <locale.h>
+
+int codigo;
+int O;
+char Nome_[10];  /*Define um lista de nomes sem previamente definir a quantidade de itens a serem armazenados */ 
+char CPF_[10];
+char Vacina_[10];
+char Lote[10];
+char Data[10];
+
+void main (){
+setlocale(LC_ALL, "Portuguese");
+
+void CadastrarVacina(){
+/* Esta rotina vai capturar os dados via teclado e armazenar na lista na Memória*/
+
+	 char Nome, CPF, Vacina, Data, Lote;
+	 printf("Código:%x\n ", codigo);
+	 printf("Nome:");
+	 scanf("%s",&Nome_[codigo]);
+	 printf("CPF:");
+	 scanf("%s",&CPF);
+	 printf("Vacina:");
+	 scanf("%s",&Vacina);
+	 printf("Data:");
+	 scanf("%s",&Data);
+	 printf("Lote:");
+	 scanf("%s",&Lote);
+	 codigo=codigo+1;
+	 CPF_[codigo]=CPF;
+	 Vacina_[codigo]=Vacina;
+	 Menu();
+}
+
+void ListarAplicacoes(){
+/* Esta rotina vai exibir uma lista com todos os Dados armazenados em memória*/
+	printf("ListarAplicações: ");
+	int ix;
+	printf("Código  Nome                CPF             Vacina\n");
+	printf("----------------------------------------------------\n");
+	for (ix=0;ix<=codigo;ix++) /* Percorre os indices até o ultimo codigo informado */
+	{
+		printf("%d  %s  %s  %s\n",ix, Nome_[ix], CPF_[ix], Vacina_[ix]);
+	}
+    printf("Tecle Algo para continuar\n");
+	scanf("%s",&O);	
+    Menu();
+}
+
+void ConsultaPorCPF(){
+/* Esta rotina vai pesquisar se encontra um CPF na lista de CPF armazenado*/
+	char cpfp;
+	printf("Informe o CPF a Pesuisar:");
+	scanf("%s",&cpfp);
+	int ix;
+	for (ix=0;ix<=codigo;ix++){
+	  if (CPF_[ix] == cpfp){ /* Verifica se o CPF arqmazenado é igual ao cpf Selecionado*/
+		printf("achei o CPF\n");
+		}
+	else {
+		   printf("Não achei o CPF\n");
+	  	 }
+
+    printf("Tecle Algo para continuar\n");
+	scanf("%d",&O);
+	Menu();
+}
+ 
+void sair()
+{
+    printf("Finalizando...\n");
+}
+
+int main()
+{
+    int opc=1;
+
+    do
+    {
+    	printf("\n\tEscolha uma opção:\n\n");
+		printf("1- Cadastrar Vacina\n");
+		printf("2- Listar Aplicações\n");
+		printf("3- Consultar por CPF\n ");
+		printf("4- Sair\n");
+        scanf("%d", &opc);
+        system("cls || clear");
+
+        switch(opc)
+        {
+            case 1:
+                CadastrarVacina();
+                break;
+
+            case 2:
+                ListarAplicacoes();
+                break;
+
+            case 3:
+                ConsultaPorCPF();
+                break;
+
+            case 4:
+                sair();
+                break;
+
+            default:
+                printf("Digite uma opcao valida\n");
+        }
+    } while(opc);
+}
+}
+}
